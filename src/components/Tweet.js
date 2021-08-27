@@ -19,15 +19,15 @@ function Tweet (props){
     <div className="content">
     <span className="name-with-handle">
       <span className="name">Your Name</span>
-      <span className="handle">{props.item.Tweethandle}</span>
+      <span className="handle">{props.Tweethandle}</span>
     </span>
-    <span className="time">3h ago</span>
-    <div className="twtmsg">{props.item.TweetMessage}</div>
+    <span className="time"> {props.tweetTime}</span>
+    <div className="twtmsg">{props.TweetMessage}</div>
       <div class="button">
       <input 
                 type="checkbox" 
                 checked={props.liked} 
-                onChange={() => props.handleChange(props.item.id)}
+                onChange={() => props.handleChange(props.userID)}
             />
       </div>
     </div>
